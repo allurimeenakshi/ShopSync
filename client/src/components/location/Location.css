@@ -1,0 +1,46 @@
+.image-selector {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .image-location{
+    max-width: 300px;
+    display: block;
+
+  }
+ /* Style the select element */
+.shine-select {
+    font-family: inherit; /* Inherit font family from parent */
+    font-size: 16px; /* Adjust font size as desired */
+    padding: 10px 20px; /* Adjust padding amount */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Add rounded corners */
+    background-color: #fff; /* Set background color */
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1); /* Subtle border shadow */
+    cursor: pointer; /* Set cursor to pointer on hover */
+    position: relative; /* Required for the shine effect */
+    overflow: hidden; /* Required for the shine effect */
+  }
+  
+  /* Shine effect on hover */
+  .shine-select::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.3),   
+  
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.3)
+    );
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .shine-select:hover::after {
+    opacity: 1;
+  }

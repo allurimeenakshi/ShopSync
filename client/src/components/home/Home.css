@@ -1,0 +1,112 @@
+/* Body and General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #d2dfff 0%, #eaddfb 100%);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  
+  header {
+    background-color: #ffffff;
+    color: rgb(91, 148, 164);
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  header h1 {
+    font-family: 'Baloo 2', cursive;
+    font-size: 60px;
+    font-weight: 700;
+    margin: 0;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  
+  header h1:hover {
+    transform: scale(1.1);
+    color: #6d3cad;
+  }
+  
+  
+  main {
+    padding: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  
+  /* Grid Container */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  
+  /* Wing Styles */
+  .wing {
+    background-color: #ffffff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  
+  /* Add spacing above the first two cards */
+  .wing:first-child,
+  .wing:nth-child(2) {
+    margin-top: 40px; /* Adjust the value as needed */
+  }
+  
+  
+  .wing:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  .wing h2 {
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  
+  .wing:hover h2 {
+    color: #4CAF50;
+  }
+  
+  
+  .wing a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  
+  .wing a:hover {
+    color: #333;
+  }
+  
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  
+  
+  

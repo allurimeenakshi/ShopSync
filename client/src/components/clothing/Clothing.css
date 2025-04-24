@@ -1,0 +1,17 @@
+.find-recommendation-btn {
+  background: linear-gradient(to bottom, #0067cc, #007bff);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background: linear-gradient(to top, #0057b3, #0067cc);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+    color : white
+  }
+}
